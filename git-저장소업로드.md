@@ -1,4 +1,5 @@
 # git repostitory(저장소)업로드 하기
+
 ## 원격저장소
 * https://github.com/wooseok0727/프로젝트.git
 * github.com 에 생성한 repository
@@ -13,8 +14,44 @@
 1. http://github.com/wooseok0727 접속
 2. github 로그인
 3. New repository 생성
-3. wooseok0727/Biz_403_2021_03_Java 이름 지정하고 create...
+4. wooseok0727/Biz_403_2021_03_Java 이름 지정하고 create...
 
 ## local 저장소 설정(생성)
 * local 프로젝트 폴더를 local 저장소로 설정하기
 1. c:/bizworks/javaworks 폴더에서 git bash 실행
+* bash shell 화면 나타남, window의 cmd 창과 유사
+2. local 저장소 선언
+* git init
+3. local 저장소를 github 계정과 연결
+* git config --local user.name wooseok0727
+* git config --local user.email crash2@naver.com
+4. local 프로젝트 압축 준비
+* 압축금지 파일 설정
+* touch .gitignore 로 파일 생성
+* .gitignore 파일을 sublime text로 열어서 압축금지 파일 정보 등록
+5. local 프로젝트를 압축하여 local 저장소에 옮길 준비를 하기
+* git add .
+6. local 저장소에 옮기기 
+* git commit -m "comment"
+7. local 저장소에 있는 파일들을 원격저장소로 업로드 하기
+* git push https://github.com/wooseok0727/Biz_403_2021_03_Java.git master
+
+## git local 저장소 설정
+* git init
+* git config --local user.name wooseok0727
+* git config --local user.email crash2@naver.com
+* git add .
+* git commit -m "comment"
+* git push https://github.com/wooseok027/Biz_403_2021_03_Java.git master
+
+https://github.com/wooseok0727/Biz_403_2021_03_Java.git
+
+## 원격저장소와 연결된 프로젝트에 새로운 코드 추가하기
+* git add .
+* git commit -m "Hello_02 추가" 
+* git push https://github.com/wooseok0727/Biz_403_2021_03_Java.git master
+
+## 원격저장소 주소를 단축하여 입력하기
+1. 원격저장소 주소를 별명으로 설정하기
+* git remote add origin https://github.com/wooseok0727/Biz_403_2021_03_Java.git
+

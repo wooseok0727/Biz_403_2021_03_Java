@@ -13,7 +13,7 @@ public class Names1 {
 	public static void main(String[] args) {
 
 		// "":문자열
-		// ""(DQ) 로 묶여 있는 내용을 
+		// ""(DQ) 로 묶여 있는 내용이나용을 
 		// "" 로 묶여있는 문자열을
 		// 출력해 달라(보여달라)
 		System.out.println("I am ooo");
