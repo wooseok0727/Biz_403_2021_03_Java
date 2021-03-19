@@ -4,7 +4,7 @@ public class Cont_10 {
 
 	public static void main(String[] args) {
 		
-		int intNum = 7;
+		int intNum = 8;
 		
 		// intNum에 담긴 값이 3의 배수이냐
 		if(intNum % 3 == 0) {
@@ -15,7 +15,6 @@ public class Cont_10 {
 			System.out.println(intNum + "는 5의배수");
 		} else {
 			System.out.println("3, 2, 5의 배수가 아님");
-		
 		}
 	}
 }
