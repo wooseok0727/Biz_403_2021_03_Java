@@ -40,7 +40,7 @@ public class Cont_02 {
 			System.out.println(i + 1);
 		}
 
-		for (int i = 0; 1 < 100; i++) {
+		for (int i = 0; i < 100; i++) {
 			System.out.println(i + 1);
 		}
 
