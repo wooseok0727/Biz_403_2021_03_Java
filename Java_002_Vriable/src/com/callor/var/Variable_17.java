@@ -23,8 +23,8 @@ public class Variable_17 {
 		num1 = 100 * 200;
 		System.out.println(num1); // 20000
 		
-		num1++; // 1증가
-		++num1; // 1증가
+		num1++; // 1증가 후위형 증감연산자
+		++num1; // 1증가 전위형 증감연산자
 		System.out.println(num1); // 20002
 		
 		num1 += 50; // 20002 + 50 더한값이 num1저장
