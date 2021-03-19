@@ -25,5 +25,7 @@ public class Cont_06 {
 			System.out.printf("%3d. %s\n",num,strNation);
 		}
 		System.out.println("===========================");
+		
+		
 	}
 }
