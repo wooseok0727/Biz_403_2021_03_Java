@@ -14,7 +14,7 @@ public class App_06 {
 			
 			nCount++;
 			// intNum = intNum % 10
-			// intNum 값과 10을 나머지 연산을 수행
+			// intNum 값과 10을 나누기 연산을 수행
 			// intNum / 10 => 3385859 / 10 = 338585
 			intNum /= 10;
 			System.out.println(intNum);
