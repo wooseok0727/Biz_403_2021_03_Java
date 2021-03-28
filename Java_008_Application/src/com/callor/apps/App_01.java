@@ -10,5 +10,6 @@ public class App_01 {
 		
 		tsV1.makeTime();
 		tsV1.printTime();
+		
 	}
 }
