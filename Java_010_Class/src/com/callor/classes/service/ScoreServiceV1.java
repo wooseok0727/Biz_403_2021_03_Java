@@ -21,7 +21,7 @@ import com.callor.classes.model.ScoreVO;
  * 		누구나 접근(읽기, 쓰기, 실행)을 하게 한다.
  * 		CLass obj = new Class()
  * 		obj.method()
- * 		ojb.변수 = 100;
+ * 		obj.변수 = 100;
  * 
  * private : 현재 파일에 있는 코드에서만 접근가능
  * 		obj.변수 = 100; // 문법 오류가 난다

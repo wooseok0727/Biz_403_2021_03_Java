@@ -12,9 +12,9 @@ public class StudentVO {
 	// 모든 변수는 private 작성
 	// Alt + Shift + S : getter setter 자동완성
 	
-	public String getAddr() {
-		return addr;
-	}
+	public String getAddr() { // 읽기전용 method void가 없기 때문에 return문 필요
+		return addr;          // return + result; 결과값을 반환 
+	}						  // return;  method 종료 빠져나오기
 	public void setAddr(String addr) {
 		this.addr = addr;
 	}

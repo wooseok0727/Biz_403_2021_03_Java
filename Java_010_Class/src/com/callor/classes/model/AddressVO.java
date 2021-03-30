@@ -2,7 +2,8 @@ package com.callor.classes.model;
 
 public class AddressVO {
 
-	private String name;
+	// 멤버변수
+	private String name; 
 	private String addr;
 	private String tel;
 	private Integer age;

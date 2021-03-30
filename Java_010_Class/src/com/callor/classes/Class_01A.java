@@ -11,7 +11,7 @@ public class Class_01A {
 		int intNum = rnd.nextInt(51) + 50;
 		
 		// i값이 0에서 시작하여
-		// 1씩 증가면서
+		// 1씩 증가하면서
 		// 100 미만일 경우 {} 명령들을 실행하라
 		// i 값은 0 ~99(100 - 1)
 		for (int i = 0; i < 100; i++) {

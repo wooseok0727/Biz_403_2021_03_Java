@@ -46,7 +46,8 @@ public class Array_01 {
 		intNums[3] = 99;
 		intNums[4] = 88;
 		
-		System.out.println(Arrays.toString(intNums));
+		// Arrays.toString() 배열들에 있는 값들을 문자열로 바꾸어 보여달라
+		System.out.println(Arrays.toString(intNums)); 
 		
 		
 	}
