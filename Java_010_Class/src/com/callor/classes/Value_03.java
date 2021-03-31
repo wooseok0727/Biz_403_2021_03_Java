@@ -1,6 +1,6 @@
 package com.callor.classes;
 
-public class value_03 {
+public class Value_03 {
 
 	public static void main(String[] args) {
 		
