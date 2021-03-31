@@ -42,6 +42,6 @@ public class ScannerEx_06 {
 			
 
 			System.out.printf("%d x %d = %d\n", intNum1, intNum2, intNum1 * intNum2);
-		}
+		} // while
 	}
 }

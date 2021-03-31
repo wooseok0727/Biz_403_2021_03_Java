@@ -48,6 +48,7 @@ public class IolistServiceV4 extends IolistServiceV1 {
 		vo.setPname(pname);
 		vo.setDate(date);
 		vo.setDname(dname);
+		vo.setInout(inout);
 		vo.setQty(qty);
 		vo.setIprice(iprice);
 		vo.setOprice(oprice);
