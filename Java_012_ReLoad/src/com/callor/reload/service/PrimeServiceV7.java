@@ -37,10 +37,10 @@ public class PrimeServiceV7 {
 		}
 	}
 	
-	private void addPrime(int rndNum) {
-		
-		for(int i = 2; i < rndNum; i++) {
-			if(rndNum % 2 == 0) {
+	private void addPrime(int rndNum) {      // 28번줄 ~ 36번줄까지 addPrime() method로 묶어서
+											 // 34~36번 for()문 밖의 if문을 작성안해도 된다 코드를 줄였다.
+		for(int i = 2; i < rndNum; i++) {    // method 에서 return; 과 반복문에서 break; 차이
+			if(rndNum % 2 == 0) {			 
 				return;
 			}
 		}
