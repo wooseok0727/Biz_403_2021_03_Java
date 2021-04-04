@@ -26,7 +26,7 @@ public class App_05 {
 		
 		// static method
 		//   method에 static keyword가 부착되면
-		//   객체를 생성하는 절차 없이 method를 직업 
+		//   객체를 생성하는 절차 없이 method를 직접 
 		//   호출할 수 있다
 		//   클래스.method()
 		// static method는 프로젝트가 시작됨과 동시에

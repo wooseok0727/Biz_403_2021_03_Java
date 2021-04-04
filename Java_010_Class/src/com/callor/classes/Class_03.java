@@ -32,5 +32,6 @@ public class Class_03 {
 		System.out.println();
 		System.out.println(divisor.toString());
 		System.out.println(divisor.size());
+		System.out.println(divisor);
 	}
 }
