@@ -97,14 +97,7 @@ public class ScoreEx_04 {
 
 		// method를 호출하여 return한 결과를
 		// 또다른 method에 매개변수로 전달하는 코드의 예
-		System.out.println(
-				Arrays.toString(
-						"Republic of Korea".split(" ")
-				)
-		);
-		System.out.println(
-				Integer.valueOf("30") 
-					+ Integer.valueOf("40")
-		);		
+		System.out.println(Arrays.toString("Republic of Korea".split(" ") ) );
+		System.out.println(Integer.valueOf("30") + Integer.valueOf("40"));		
 	}
 }
