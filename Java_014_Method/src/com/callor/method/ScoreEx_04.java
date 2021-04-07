@@ -22,8 +22,8 @@ public class ScoreEx_04 {
 		scoreVO.setEng(90);
 		scoreVO.setMath(90);
 		
-		System.out.println(intNum1);
-		System.out.println(scoreVO);
+		System.out.println(intNum1); // 100 값이 출력됨
+		System.out.println(scoreVO); // 주소값이 출력됨
 		
 		
 		/*

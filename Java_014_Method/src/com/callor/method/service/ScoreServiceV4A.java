@@ -57,7 +57,7 @@ public class ScoreServiceV4A {
 				// break;
 				return;
 			}
-			// return 받은 점수를 socres 배열의 i번째 위치에
+			// return 받은 점수를 scores 배열의 i번째 위치에
 			// 저장하라
 			scores[i] = score;
 		} // end for()

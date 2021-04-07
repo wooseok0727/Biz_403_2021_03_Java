@@ -21,6 +21,7 @@ public class ScoreEx_05 {
 		scoreVO.setEng(90);
 		scoreVO.setMath(90);
 		scoreList.add(scoreVO);
+		System.out.println(scoreVO);
 		
 		/*
 		 * 만약 scoreVO =new ScoreVO() 코드를 생략하면
@@ -44,12 +45,14 @@ public class ScoreEx_05 {
 		scoreVO.setEng(77);
 		scoreVO.setMath(66);
 		scoreList.add(scoreVO);
+		System.out.println(scoreVO);
 		
 		scoreVO = new ScoreVO();
 		scoreVO.setKor(55);
 		scoreVO.setEng(55);
 		scoreVO.setMath(55);
 		scoreList.add(scoreVO);
+		System.out.println(scoreVO);
 		
 		for(int i = 0; i < scoreList.size(); i++) {
 			

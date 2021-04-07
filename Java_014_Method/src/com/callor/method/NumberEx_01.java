@@ -28,11 +28,12 @@ public class NumberEx_01 {
 		Float retNum1 = nsV1.addNum(30.3f, 30.2f);
 		
 		// NullPointerException 발생
-		// float retNum2 = nsV1.addNum(30.3f, 30.2f);
+		// float 기본타입은 null 값을 받을수 없기 때문
+		// float retNum2 = nsV1.addNum(30.3f, 30.2f); 
 		
 		/*
 		 * 변수를 선언하는 방식에서 
-		 * 	primitive 방식과 wrapper class 방식이 있다
+		 * 	primitive(기본) 방식과 wrapper class 방식이 있다
 		 * 
 		 * 특히 숫자를 다루는 경우에
 		 * 항상 숫자값만 저장된다는 보장이 있을 경우는
@@ -48,7 +49,7 @@ public class NumberEx_01 {
 		 */
 		
 		// 객체지향 특징 중 다형성
-		//			method의 중복선언 이라고도 한다
+		//			method의 중복선언 이라고도 한다 ( 오버로드)
 
 		// 같은 이름의 method가 한개의 클래스에 중복 선언되어 있어도
 		// 전달하는 값의 type에 따라 java는 자동으로

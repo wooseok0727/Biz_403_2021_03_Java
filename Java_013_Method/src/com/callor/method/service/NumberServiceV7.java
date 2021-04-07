@@ -31,9 +31,8 @@ public class NumberServiceV7 {
 				} else if (retNum[i] < 0 || retNum[i] > 100) {
 					System.out.println("점수는 0 ~ 100까지");
 					continue;
-				} else {
-					break;
 				}
+				break;
 			}
 		}
 	}
