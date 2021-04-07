@@ -16,6 +16,7 @@ public class InputServiceV1 {
 	// 사용할 때는 클래스영역에 선언을 하고
 	// 클래스의 생성자에서 생성(초기화)를 하는 것이 좋다
 	protected Scanner scan;
+	
 	public InputServiceV1() {
 		scan = new Scanner(System.in);
 	}

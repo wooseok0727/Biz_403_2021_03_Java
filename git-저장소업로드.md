@@ -23,8 +23,8 @@
 2. local 저장소 선언
 * git init
 3. local 저장소를 github 계정과 연결
-* git config --local user.name wooseok0727
-* git config --local user.email crash2@naver.com
+* git config --local user.name 자신의 아이디
+* git config --local user.email 자신의 이메일
 4. local 프로젝트 압축 준비
 * 압축금지 파일 설정
 * touch .gitignore 로 파일 생성
