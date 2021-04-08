@@ -10,5 +10,7 @@ public class InputEx_01 {
 		InputService isV1 = new InputServiceImplV1();
 		
 		isV1.inputValue("새우깡",0,1000);
+		
+		System.out.println(isV1.toString());
 	}
 }
