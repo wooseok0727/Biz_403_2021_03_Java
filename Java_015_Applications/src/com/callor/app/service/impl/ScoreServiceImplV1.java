@@ -26,16 +26,20 @@ public class ScoreServiceImplV1 implements ScoreService {
 	protected Scanner scan;
 	protected List<ScoreVO> scoreList;
 	protected InputService inService;
-	protected String inputName;
-	protected String inputNum;
+	protected String[] subjectName;
+	protected Integer[] subjectScore;
+	protected String studentNumber;
+	protected String studentName;
 	
 	public ScoreServiceImplV1() {
 	
 		scan = new Scanner(System.in);
 		scoreList = new ArrayList<ScoreVO>();
 		inService = new InputServiceImplV1();
-		inputName = null;
-		inputNum = null;
+		subjectName = new String[]{"국어","영어","수학"};
+		subjectScore = new Integer[subjectName.length];
+		studentNumber = null;
+		studentName = null;
 	}
 
 	@Override
@@ -52,6 +56,7 @@ public class ScoreServiceImplV1 implements ScoreService {
 			System.out.print(">> ");
 			String select = scan.nextLine();
 			if(select.trim().equals("1")) {
+				this.inputStudentNumber();
 				this.inputName();
 				this.inputScore();
 			} else if (select.trim().equals("2")) {
@@ -66,39 +71,46 @@ public class ScoreServiceImplV1 implements ScoreService {
 		}
 	}
 
-	@Override
-	public String inputName() {
-		
-		System.out.println("이름을 입력하세요");
-		System.out.print(">> ");
-		inputName = scan.nextLine();
+	public String inputStudentNumber() {
+		// TODO 학번 입력받기
 		System.out.println("학번을 입력하세요");
 		System.out.print(">> ");
-		inputNum = scan.nextLine();
-		
-		return null;
+		studentNumber = scan.nextLine();		
+		return studentNumber;
+	}
+	
+	@Override
+	public String inputName() {
+		// TODO 학생이름 입력받기
+		System.out.println("이름을 입력하세요");
+		System.out.print(">> ");
+		studentName = scan.nextLine();
+		return studentName;
 	}
 
 	@Override
 	public void inputScore() {
 		// TODO 과목점수 입력받기
-		String[] subject = {"국어","영어","수학"};
-		Integer[] scores = new Integer[subject.length];
-		for(int i = 0; i < subject.length; i++) {
-			scores[i] = inService.inputValue(subject[i], 0, 100);
-			if(scores[i] == null) {
+		for(int i = 0; i < subjectName.length; i++) {
+			subjectScore[i] = inService.inputValue(subjectName[i], 0, 100);
+			if(subjectScore[i] == null) {
 				return;
 			}
 		}
-		ScoreVO scoreVO = new ScoreVO();
-		scoreVO.setNum(inputNum);
-		scoreVO.setName(inputName);
-		scoreVO.setKor(scores[0]);
-		scoreVO.setEng(scores[1]);
-		scoreVO.setMath(scores[2]);
-		scoreList.add(scoreVO);
- 		
+		this.addScore();
 	}
+		
+	public void addScore() {
+		// TODO 학생의 점수 추가하기
+		ScoreVO scoreVO = new ScoreVO();
+		scoreVO.setNum(studentNumber);
+		scoreVO.setName(studentName);
+		scoreVO.setKor(subjectScore[0]);
+		scoreVO.setEng(subjectScore[1]);
+		scoreVO.setMath(subjectScore[2]);
+		scoreList.add(scoreVO);	
+	}
+	
 	@Override
 	public void printScore() {
 		// TODO 성적 리스트 출력하기
