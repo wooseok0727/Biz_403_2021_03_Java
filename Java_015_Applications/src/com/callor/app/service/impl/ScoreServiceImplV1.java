@@ -56,9 +56,7 @@ public class ScoreServiceImplV1 implements ScoreService {
 			System.out.print(">> ");
 			String select = scan.nextLine();
 			if(select.trim().equals("1")) {
-				this.inputStudentNumber();
-				this.inputName();
-				this.inputScore();
+				this.inputService();
 			} else if (select.trim().equals("2")) {
 				this.printScore();
 			} else if (select.trim().equals("QUIT")) {
@@ -70,22 +68,58 @@ public class ScoreServiceImplV1 implements ScoreService {
 			}
 		}
 	}
+	
+	public void inputService() {
+		
+		if(this.inputStudentNumber() == null) {
+			return;
+		}
+		if(this.inputName() == null) {
+			return;
+		}
+		this.inputScore();
+	}
 
 	public String inputStudentNumber() {
 		// TODO 학번 입력받기
-		System.out.println("학번을 입력하세요");
-		System.out.print(">> ");
-		studentNumber = scan.nextLine();		
-		return studentNumber;
-	}
+		while(true) {
+			Integer intNumber = inService.inputValue("학번", 1);
+			if(intNumber == null) {
+				return null;
+			}
+			studentNumber = String.format("%03d",intNumber);
+			
+			boolean noYes = false;
+			for (int i = 0; i < scoreList.size(); i++) {
+				ScoreVO vo = scoreList.get(i);
+				if (studentNumber.equals(vo.getNum())) {
+					System.out.println("이미 입력된 학생입니다");
+					noYes = true;
+					break;
+				}
+			} // end for()
+			if (noYes) {
+				continue;
+			}
+			return studentNumber;
+		} // end while()
+	} // end inputStudentNumber()
 	
 	@Override
 	public String inputName() {
 		// TODO 학생이름 입력받기
-		System.out.println("이름을 입력하세요");
-		System.out.print(">> ");
-		studentName = scan.nextLine();
-		return studentName;
+		while(true) {
+			System.out.println("이름을 입력하세요(QUIT:입력종료)");
+			System.out.print(">> ");
+			studentName = scan.nextLine();
+			if(studentName.trim().equals("QUIT")) {
+				return null;
+			} else if (studentName.equals("")) {
+				System.out.println("학생이름은 반드시 입력해야합니다");
+				continue;
+			}
+			return studentName;
+		}
 	}
 
 	@Override
@@ -100,7 +134,7 @@ public class ScoreServiceImplV1 implements ScoreService {
 		this.addScore();
 	}
 		
-	public void addScore() {
+	private void addScore() {
 		// TODO 학생의 점수 추가하기
 		ScoreVO scoreVO = new ScoreVO();
 		scoreVO.setNum(studentNumber);
