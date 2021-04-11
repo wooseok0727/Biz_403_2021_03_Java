@@ -34,8 +34,8 @@ public class FileWriter_01 {
 		//		"만약 이미 있으면 지우고 다시 만들어라"
 
 		try {
-			fileWriter = new FileWriter(fileName); 		// 	무조건 의무적으로 try-catch문을 써야한다!
-			out = new PrintWriter(fileWriter);
+			fileWriter = new FileWriter(fileName); 	// 파일생성	// 	무조건 의무적으로 try-catch문을 써야한다!
+			out = new PrintWriter(fileWriter); // 파일에 내용 작성
 			
 			out.println("대한민국만세");
 			out.printf("%d x %d = %d\n",3 ,4, 3 * 4);
