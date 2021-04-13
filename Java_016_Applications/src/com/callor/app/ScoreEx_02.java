@@ -9,5 +9,7 @@ public class ScoreEx_02 {
 		
 		ScoreService sService = new ScoreServiceImplV2Ex();
 		sService.selectMenu();
+		
+		
 	}
 }
