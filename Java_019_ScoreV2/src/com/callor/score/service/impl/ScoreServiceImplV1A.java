@@ -85,9 +85,9 @@ public class ScoreServiceImplV1A implements ScoreService {
 		Integer intKor = null;
 		intKor = inService.inputValue("국어", 0, 100);
 		if(intKor == null) {
-		return;
+			return;
 		}
-		// 위에서 담겨있던 데이터는 clear되고
+		
 		ScoreVO scoreVO = new ScoreVO();
 		scoreVO.setNum(strNum);;
 		scoreVO.setKor(intKor);

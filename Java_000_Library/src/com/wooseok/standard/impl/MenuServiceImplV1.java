@@ -50,9 +50,9 @@ public class MenuServiceImplV1 implements MenuService {
 
 				System.out.printf("%d. %s\n", menuIndex + 1, menuList.get(menuIndex));
 			}
-			System.out.println("QUIT.업무종료");
+			System.out.println("QUIT.종료");
 			System.out.println("-".repeat(50));
-			System.out.print("업무선택 >> ");
+			System.out.print("선택 >> ");
 			String strM = scan.nextLine();
 			if (strM.trim().equals("QUIT")) {
 				return null;
@@ -62,11 +62,11 @@ public class MenuServiceImplV1 implements MenuService {
 			try {
 				intM = Integer.valueOf(strM.trim());
 			} catch (NumberFormatException e) {
-				System.out.printf("업무는 1 ~ %d, 또는 QUIT만 입력하세요\n", nSize);
+				System.out.printf("1 ~ %d, 또는 QUIT만 입력하세요\n", nSize);
 				continue;
 			}
 			if(intM < 1 || intM > nSize) {
-				System.out.printf("업무는 1 ~ %d, 또는 QUIT만 입력하세요\n", nSize);
+				System.out.printf("1 ~ %d, 또는 QUIT만 입력하세요\n", nSize);
 				continue;
 			}
 			return intM;
