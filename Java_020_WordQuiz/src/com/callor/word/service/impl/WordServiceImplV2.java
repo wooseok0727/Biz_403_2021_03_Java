@@ -114,7 +114,7 @@ public class WordServiceImplV2 extends WordServiceImplV1 {
 	}
 	
 	protected void yesNo(WordVO wordVO, String input) {
-		// TODO 단어 채점
+		// TODO 단어 채점  // 맞으면 다음단어로 넘어가기 위한 조치 필요 룰규칙 재정리 필요
 		String strEng = wordVO.getEnglish();
 		if(strEng.equalsIgnoreCase(input)) {
 			score.set맞은개수(score.get맞은개수() + 1);
