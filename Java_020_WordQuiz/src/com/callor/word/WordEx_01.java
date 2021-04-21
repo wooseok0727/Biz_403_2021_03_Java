@@ -10,6 +10,5 @@ public class WordEx_01 {
 		WordService wService = new WordServiceImplV2();
 			wService.startGame();
 			
-			
 	}
 }
