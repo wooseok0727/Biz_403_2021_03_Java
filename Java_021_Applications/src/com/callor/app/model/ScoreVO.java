@@ -32,7 +32,7 @@ public class ScoreVO {
 		return kor;
 	}
 	public void setKor(Integer kor) {
-		kor = kor;
+		this.kor = kor;
 	}
 	public Integer getEng() {
 		return eng;
